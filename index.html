@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+  <title>NightForm — Workout Planner</title>
+  <link rel="manifest" href="manifest.json"/>
+  <meta name="theme-color" content="#0a1222"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand">
+        <div class="mark" aria-hidden="true">
+          <!-- dumbbell icon -->
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M7 10v4M17 10v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M9 9h6v6H9V9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M5 9h2v6H5a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1Zm14 0h-2v6h2a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <h1>Workout Planner</h1>
+          <p>Plan your training, track your progress</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="section">
+        <div class="sectionHead">
+          <span class="kicker">Training Days</span>
+          <button class="ghost" id="addDayBtn">
+            <span class="icon">＋</span>
+            Add day
+          </button>
+        </div>
+
+        <div class="dayRow" id="dayRow"></div>
+      </section>
+
+      <section class="section">
+        <div class="sectionHead split">
+          <div>
+            <span class="kicker" id="currentDayKicker">Day</span>
+            <div class="mini" id="currentDayName">Select a day</div>
+          </div>
+          <div class="progress" id="progressText">0/0 completed</div>
+        </div>
+
+        <div class="exerciseList" id="exerciseList"></div>
+
+        <button class="addExercise" id="addExerciseBtn" disabled>
+          <span class="plus">＋</span>
+          Add Exercise
+        </button>
+      </section>
+    </main>
+
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modalCard">
+        <div class="modalTitle" id="modalTitle">Rename</div>
+        <input class="modalInput" id="modalInput" placeholder="Name"/>
+        <div class="modalActions">
+          <button class="ghost" id="modalCancel">Cancel</button>
+          <button class="primary" id="modalOk">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

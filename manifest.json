@@ -1,0 +1,9 @@
+{
+  "name": "NightForm",
+  "short_name": "NightForm",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a1222",
+  "theme_color": "#0a1222",
+  "icons": []
+}

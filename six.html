@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NightForm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>NightForm</h1>
+  </header>
+
+  <section id="days">
+    <button onclick="addDay()">＋ Day</button>
+    <div id="dayList"></div>
+  </section>
+
+  <section id="exercises">
+    <h2 id="currentDay">Select a Day</h2>
+    <button onclick="addExercise()">＋ Exercise</button>
+    <div id="exerciseList"></div>
+  </section>
+
+<script src="app.js"></script>
+</body>
+</html>
